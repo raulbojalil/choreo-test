@@ -59,7 +59,7 @@ paths:
         - employees
       requestBody:
         content:
-          plain/text:
+          text/plain:
             schema:
               type: "string"
   /healthz:
