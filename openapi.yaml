@@ -59,9 +59,9 @@ paths:
         - employees
       requestBody:
         content:
-          application/json:
+          plain/text:
             schema:
-              $ref: "#/components/schemas/KeyValue"
+              type: "string"
   /healthz:
     summary: Healthcheck endpoint
     get:
