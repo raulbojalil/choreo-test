@@ -46,7 +46,7 @@ paths:
       parameters:
         - name: uuid
           in: path
-          description: UUID of employee to return
+          description: UUID of employee to insert/update
           required: true
           schema:
             type: string
@@ -92,15 +92,12 @@ components:
         - author
         - status
       properties:
-        title:
+        uuid:
           type: string
-          example: "my-title"
-        author:
+          example: "123"
+        content:
           type: string
-          example: "my-author"
-        status:
-          type: string
-          example: "read"
+          example: "test string"
     StringArray:
       type: array
       items:

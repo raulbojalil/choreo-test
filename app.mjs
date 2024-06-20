@@ -4,7 +4,7 @@ import cache from "./cache.mjs";
 
 const app = express();
 //app.use(express.json());
-app.use(express.raw());
+app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/reading-list/employees/:uuid", (req, res) => {
